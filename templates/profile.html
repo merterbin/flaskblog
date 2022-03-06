@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div >
+    <div class="card p-3">
+        <div class="d-flex align-items-center">
+            <div class="ml-3 w-100">
+                <h4 class="mb-0 mt-0">{{user.name}}</h4> 
+                <div class="p-2 mt-2 bg-primary d-flex justify-content-between rounded text-white stats">
+                    <div class="d-flex flex-column"> <span class="articles">Email: {{user.email}}</span><span class="articles">Kullanıcı Adı: {{user.username}}</span></div>
+                </div>
+                <td class="button mt-2 d-flex flex-row align-items-center"> <a  href = "/chat"class="btn btn-sm btn-outline-success w-100">Chat</a> </td>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock body %}
